@@ -426,6 +426,8 @@ class CurrentState(_BaseGetDictArgs):
     ev_charging_connected: bool | None = field_bool("charging_connect")
     ev_charging_slow: bool | None = field_bool("charging_slow")
     ev_charging_fast: bool | None = field_bool("charging_fast")
+    ev_charging_start_state_of_charge: float | None = field_float("SOC_start")
+    ev_charging_start_timestamp: int | None = field_int("charging_start")
     ev_status_ready: bool | None = field_bool("ev_status_ready")
     battery_temperature: int | None = field_int("battery_temperature")
 
