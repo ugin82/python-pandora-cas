@@ -116,6 +116,15 @@ class CommandID(IntEnum):
     CLIMATE_DEFROSTER_TURN_OFF = 58638  # Выкл. Defroster
     CLIMATE_MODE_COMFORT = 58639  # Режим комфорт
     CLIMATE_MODE_VENT = 58640  # Режим проветривания салона
+    # User-defined climate commands («Вкл./выкл. команда 1..3» in the
+    # Pandora Online app). 58641 is verified on a car; 58642..58646 are
+    # inferred from the numbering (on/off pairs fill the gap up to 58647).
+    ENABLE_CUSTOM_CLIMATE_CMD_1 = 58641  # Вкл. команда 1
+    DISABLE_CUSTOM_CLIMATE_CMD_1 = 58642  # Выкл. команда 1 (unverified)
+    ENABLE_CUSTOM_CLIMATE_CMD_2 = 58643  # Вкл. команда 2 (unverified)
+    DISABLE_CUSTOM_CLIMATE_CMD_2 = 58644  # Выкл. команда 2 (unverified)
+    ENABLE_CUSTOM_CLIMATE_CMD_3 = 58645  # Вкл. команда 3 (unverified)
+    DISABLE_CUSTOM_CLIMATE_CMD_3 = 58646  # Выкл. команда 3 (unverified)
     CLIMATE_BATTERY_HEAT_TURN_ON = 58647  # Вкл. подогрев батареи
     CLIMATE_BATTERY_HEAT_TURN_OFF = 58648  # Выкл. подогрев батареи
 
